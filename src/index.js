@@ -57,6 +57,24 @@ class Game extends React.Component {
   }
 }
 
+//===================================================
+//TESTING
+
+function Welcome(props) {
+  return <h1>Welcome, {props.name + " " + props.last}</h1>;
+}
+
+function App2() {
+  return (
+    <div>
+      <Welcome name="Nate" last="Daniels" />
+    </div>
+  );
+}
+
+ReactDOM.render(App2(), document.getElementById("root2"));
+
+// END TESTING
 // ========================================
 
 ReactDOM.render(<Game />, document.getElementById("root"));
