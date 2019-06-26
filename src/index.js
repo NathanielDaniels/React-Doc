@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
+import Header from "./Header";
 import * as serviceWorker from "./serviceWorker";
 
 class Square extends React.Component {
@@ -45,6 +45,7 @@ class Game extends React.Component {
   render() {
     return (
       <div className="game">
+        <Header />
         <div className="game-board">
           <Board />
         </div>
@@ -61,7 +62,7 @@ class Game extends React.Component {
 //TESTING
 
 function Welcome(props) {
-  return <h1>Welcome, {props.name + " " + props.last}</h1>;
+  return <h1>Hell0, {props.name + " " + props.last}</h1>;
 }
 
 function App2() {
